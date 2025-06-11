@@ -19,5 +19,17 @@ We perform numerical experiments in a 10-dimensional space $d = 10$, using a uni
 
 - **Corruption**: During the first $n = 50$ steps, we simulate reward corruption using the flipping technique, where the reward is intentionally flipped to mislead the bandit into making opposite decisions.
 
+## Running the Algorithm
+
+- Modify parameters in `gada1.ipynb` as needed:
+
+| Parameter    | Description                             | Default         |
+|--------------|---------------------------------------|-----------------|
+| `func`       | Reward function  | `lambda x: x`   |
+| `corruption` | Number of adversarial corruption rounds (0 means no corruption) | 0               |
+| `T`          | Number of iterations                   | 1000            |
+| `dim`        | Dimension of decision variables       | 10              |
+| `actions`    | Number of available actions            | 20              |
+
 ## Acknowledgments
 This code is based on the implementation of [CW-OFUL](https://github.com/uclaml/CW-OFUL/tree/main). Thanks for their excellent works!
